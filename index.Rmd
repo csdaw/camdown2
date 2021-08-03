@@ -10,8 +10,9 @@ site: bookdown::bookdown_site
 #### output details ####
 ########################
 output:
-  bookdown::pdf_book: default
-documentclass: book
+  bookdown::pdf_book: 
+    template: templates/thesis.tex
+documentclass: PhDThesisPSnPDF
 ---
 
 <!-- A comment -->
