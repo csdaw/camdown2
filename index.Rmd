@@ -1,0 +1,17 @@
+---
+title: |
+  `camdown`: \
+  A University of Cambridge \
+  Thesis Template
+author: "Charlotte Dawson"
+site: bookdown::bookdown_site
+
+########################
+#### output details ####
+########################
+output:
+  bookdown::pdf_book: default
+documentclass: book
+---
+
+<!-- A comment -->

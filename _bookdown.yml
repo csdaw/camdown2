@@ -1,0 +1,8 @@
+# this sets the directory that your output gets stored in
+# Putting it in a 'docs' folder is convenient if you want to publish HTML
+# output with GitHub Pages 
+output_dir: "docs"
+
+# If the below is set to true, you don't have to manually delete the merged 
+# _main.Rmd file if something goes wrong when you try to build
+delete_merged_file: true
