@@ -90,8 +90,8 @@
 %\texorpdfstring{LaTeX_Version}{PDF Version (non-latex)} eg.,
 %\texorpdfstring{$sigma$}{sigma}
 
-%% Subtitle (Optional)
-\subtitle{Subtitle}
+%% Subtitle (optional)
+\subtitle{$subtitle$}
 
 %% The full name of the author
 \author{$author$}
@@ -99,18 +99,20 @@
 %% Department (eg. Department of Engineering, Maths, Physics)
 \dept{$dept$}
 
-%% University and Crest
+%% University
 \university{$university$}
-% Crest minimum should be 30mm.
-\crest{\includegraphics[width=0.2\textwidth]{University_Crest}}
-%% Use this crest, if you are using the college crest
-%% Crest long miminum should be 65mm
-%\crest{\includegraphics[width=0.45\textwidth]{University_Crest_Long}}
 
-%% College shield [optional] 
-% Crest minimum should be 30mm.
-%\collegeshield{\includegraphics[width=0.2\textwidth]{CollegeShields/Kings}}
-
+%% University Crest and 
+%% College shield (optional)
+\def\collegelogo{$college-logo$}\ifx\collegelogo\empty
+  % Standard University Crest minimum should be 30mm
+  \crest{\includegraphics[width=0.2\textwidth]{$university-logo$}}
+\else
+  % Long University Crest minimum should be 65mm
+  \crest{\includegraphics[width=0.45\textwidth]{$university-logo$}}
+  % College Crest minimum should be 30mm
+  \collegeshield{\includegraphics[width=0.2\textwidth]{$college-logo$}}
+\fi
 
 %% Supervisor (optional)
 %% for multiple supervisors, append each supervisor with the \newline command
@@ -151,8 +153,7 @@
 \college{$college$}
 
 %% Submission date
-% Default is set as {\monthname[\the\month]\space\the\year}
-%\degreedate{September 2014} 
+\degreedate{$date$} 
 
 %% Meta information
 \subject{$subject$} 

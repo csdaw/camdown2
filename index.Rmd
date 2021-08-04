@@ -1,15 +1,20 @@
 ---
 title: |
-  `camdown`: \
+  `camdown` \
   A University of Cambridge \
   Thesis Template
-author: "Charlotte Dawson"
-dept: "Department of Biochemistry"
-university: "University of Cambridge"
-degreetitle: "Doctor of Philosophy"
-college: "Downing College"
-subject: "Biochemistry"
-keywords: "LaTeX, PhD Thesis, Biochemistry, University of Cambridge"
+subtitle: |
+  Using `bookdown`
+date: '`r format(Sys.Date(), "%d %B %Y")`'
+author: Charlotte Dawson
+dept: Department of Biochemistry
+university-logo: Figs/University_Crest_Long.pdf
+college-logo: Figs/colleges/Downing.pdf
+university: University of Cambridge
+degreetitle: Doctor of Philosophy
+college: Downing College
+subject: Biochemistry
+keywords: LaTeX, PhD Thesis, Biochemistry, University of Cambridge
 site: bookdown::bookdown_site
 
 ########################
@@ -18,6 +23,7 @@ site: bookdown::bookdown_site
 output:
   bookdown::pdf_book: 
     template: templates/thesis.tex
+    keep_tex: true
 documentclass: PhDThesisPSnPDF
 ---
 
