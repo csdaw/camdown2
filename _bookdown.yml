@@ -6,3 +6,10 @@ output_dir: "docs"
 # If the below is set to true, you don't have to manually delete the merged 
 # _main.Rmd file if something goes wrong when you try to build
 delete_merged_file: true
+
+# By default, bookdown will automatically merge .Rmd files in the root folder
+# into your thesis. If you specify a sub directory with rmd_subdir, bookdown
+# searches through this folder too. .Rmd files you don't want automatically
+# included, should start with an underscore, e.g. _abstract.Rmd (otherwise 
+# bookdown would merge the abstract into the body text)
+rmd_subdir: ["back-matter"]
