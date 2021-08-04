@@ -1,0 +1,6 @@
+This *R Markdown* template is for writing a University of Cambridge thesis. The 
+template is built using Yihui Xie's `bookdown` package, with significant 
+inspiration from Ulrik Lyngs's `oxforddown` and heavy reliance on Krishna 
+Kumar's `phd-thesis-template` University of Cambridge \LaTeX\ template.
+
+I hope this template proves useful for you!
