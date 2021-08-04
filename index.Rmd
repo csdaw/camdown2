@@ -32,11 +32,15 @@ subject: Biochemistry
 keywords: LaTeX, PhD Thesis, Biochemistry, University of Cambridge
 site: bookdown::bookdown_site
 
+bibliography: references/references.bib
+bibliography-heading: References
+
 ########################
 #### output details ####
 ########################
 output:
   bookdown::pdf_book: 
+    citation_package: natbib
     template: templates/thesis.tex
     keep_tex: true
     pandoc_args: "--top-level-division=chapter"

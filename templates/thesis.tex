@@ -246,7 +246,8 @@ $body$
 %\bibliographystyle{unsrt} % Use for unsorted references  
 %\bibliographystyle{plainnat} % use this to have URLs listed in References
 \cleardoublepage
-\bibliography{References/references} % Path to your References.bib file
+\renewcommand{\bibname}{$bibliography-heading$}
+\bibliography{$bibliography$} % Path to your References.bib file
 
 
 % If you would like to use BibLaTeX for your references, pass `custombib' as
