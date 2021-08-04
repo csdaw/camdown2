@@ -4,6 +4,12 @@ title: |
   A University of Cambridge \
   Thesis Template
 author: "Charlotte Dawson"
+dept: "Department of Biochemistry"
+university: "University of Cambridge"
+degreetitle: "Doctor of Philosophy"
+college: "Downing College"
+subject: "Biochemistry"
+keywords: "LaTeX, PhD Thesis, Biochemistry, University of Cambridge"
 site: bookdown::bookdown_site
 
 ########################
