@@ -114,32 +114,35 @@
   \collegeshield{\includegraphics[width=0.2\textwidth]{$college-logo$}}
 \fi
 
-%% Supervisor (optional)
-%% for multiple supervisors, append each supervisor with the \newline command
+%% Supervisor and Supervsior Role (both optional)
+%% For multiple supervisors, append each supervisor with the \newline command
 %\supervisor{Prof. A.B. Supervisor\newline
 %Prof. C.D. Supervisor}
-
-%% Supervisor Role (optional) - Supervisor (default) or advisor
 % \supervisorrole{\textbf{Supervisors: }}
-%% if no title is desired:
+%% if no role title is desired:
 % \supervisorrole{}
+\ifx\supervisor{$supervisor$}\empty
+  % Do nothing
+\else
+  \supervisor{$supervisor$}
+  \supervisorrole{$supervisor-role$}
+  \supervisorlinewidth{0.35\textwidth}
+\fi
 
-%% Supervisor line width: required to align supervisors
-%\supervisorlinewidth{0.35\textwidth}
-
-%% Advisor (optional)
-%% for multiple advisors, append each advisor with the \newline command
+%% Advisor and Advisor Role (both optional)
+%% For multiple advisors, append each advisor with the \newline command
 %\advisor{Dr. A. Advisor\newline
 %Dr. B. Advisor}
-     
-%% Advisor Role (optional) - Advisor (default) or leave empty
 % \advisorrole{Advisors: }
 %% if no title is required
 % \advisorrole{}
-
-%% Advisor line width: required to align supervisors
-%\advisorlinewidth{0.25\textwidth}
-
+\ifx\advisor{$advisor$}\empty
+  % Do nothing
+\else
+  \advisor{$advisor$}
+  \advisorrole{$advisor-role$}
+  \advisorlinewidth{0.25\textwidth}
+\fi
 
 %% You can redefine the submission text:
 % Default as per the University guidelines:

@@ -12,6 +12,11 @@ university-logo: Figs/University_Crest_Long.pdf
 college-logo: Figs/colleges/Downing.pdf
 university: University of Cambridge
 degreetitle: Doctor of Philosophy
+supervisor: |
+  `r paste(c("Prof. A.B. Supervisor\\newline", "Prof. C.D. Supervisor"), collapse = "\n  ")`
+supervisor-role: '**Supervisors: **'
+advisor: Dr. A. Advisor
+advisor-role: '**Advisor: **'
 college: Downing College
 subject: Biochemistry
 keywords: LaTeX, PhD Thesis, Biochemistry, University of Cambridge
