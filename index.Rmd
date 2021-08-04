@@ -39,7 +39,10 @@ output:
   bookdown::pdf_book: 
     template: templates/thesis.tex
     keep_tex: true
+    pandoc_args: "--top-level-division=chapter"
 documentclass: PhDThesisPSnPDF
 ---
 
 <!-- A comment -->
+
+\mainmatter
