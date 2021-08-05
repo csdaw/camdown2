@@ -45,6 +45,7 @@ output:
     keep_tex: true
     pandoc_args: "--top-level-division=chapter"
 documentclass: PhDThesisPSnPDF
+classoption: a4paper, 12pt, times, numbered, print, index
 ---
 
 <!-- A comment -->
