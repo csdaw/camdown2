@@ -1,17 +1,18 @@
-camdown
-================
+---
+title: "camdown"
+output: github_document
+---
 
 ## Render a single chapter
 
-1.  Open the **.Rmd** file of a chapter.
-2.  Copy the following YAML header which uses the
-    **templates/chapter.tex** template, and specifies the desired output
-    e.g. `bookdown::pdf_document2`. See below for an example.
-3.  Run
-    `rmarkdown::render("chapter-name.Rmd", output_format = "bookdown::pdf_document2")`
-    in the console.
+1. Open the **.Rmd** file of a chapter.
+2. Copy the following YAML header which uses the **templates/chapter.tex**
+template, and specifies the desired output e.g. `bookdown::pdf_document2`. 
+See below for an example.
+3. Run `rmarkdown::render("chapter-name.Rmd", output_format = "bookdown::pdf_document2")`
+in the console.
 
-``` yaml
+```yaml
 ---
 #########################################
 # options for knitting a single chapter #
