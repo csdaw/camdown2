@@ -49,5 +49,3 @@ classoption: a4paper, 12pt, times, numbered, print, index
 ---
 
 <!-- A comment -->
-
-\mainmatter
