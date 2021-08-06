@@ -9,6 +9,14 @@
 This first appendix includes an R chunk that was hidden in the document 
 (using `echo = FALSE`) to help with readibility:
 
+\newpage
+
+Placeholder text.
+
 # The Second Appendix
 
 Here is another appendix.
+
+\newpage
+
+Placeholder text.

@@ -20,8 +20,7 @@ output:
   bookdown::pdf_document2:
     template: templates/chapter.tex
     citation_package: natbib
-  bookdown::html_document2: default
-  bookdown::word_document2: default
+    pandoc_args: "--top-level-division=chapter"
 documentclass: PhDThesisPSnPDF
 classoption: a4paper, 12pt, times, numbered, print, index
 bibliography: [references/references.bib]
