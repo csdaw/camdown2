@@ -9,7 +9,10 @@ camdown
     e.g. `bookdown::pdf_document2`. See below for an example.
 3.  Run
     `rmarkdown::render("chapter-name.Rmd", output_format = "bookdown::pdf_document2")`
-    in the console.
+    in the console. Don’t use the `Knit` button, it will try to render
+    the entire thesis.
+4.  Be sure to **remove the YAML header when you are done** and want to
+    `Knit` the entire thesis again.
 
 ``` yaml
 ---
